@@ -160,6 +160,101 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-django" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/01/11/django/">python web django</a>
+    </h1>
+  
+
+        
+        <a href="/2022/01/11/django/" class="archive-article-date">
+  	<time datetime="2022-01-11T15:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>python web 是临时学的，django也是现充的，当时就花了八个小时写了的，现在没记得几个关于的django的命令了</p>
+<p>主要教程网站：<a target="_blank" rel="noopener" href="http://www.byhy.net/tut/webdev/django/01/">http://www.byhy.net/tut/webdev/django/01/</a><br>B站也有这个教程的视屏</p>
+<p>副教程：菜鸟</p>
+<hr>
+<p>django是python web开发中流行的后端应用框架，<br>大多是基于http协议，</p>
+<p>1.安装django</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pip install django  </span><br><span class="line"></span><br><span class="line">python -m django --version //检查是否安装完成，并显示版本</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>2.创建项目</p>
+<p>进到项目文件夹创建目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">django-admin startproject 项目名称</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>会得到一个带有项目名称的文件夹,此处使用review来写</p>
+<p>review文件夹下有一个review文件夹（其中包括了_init__.py,settings.py,urls.py,wsgi.py）和manage.py文件</p>
+<p>manage.py  是一个工具脚本，用作项目管理，大部分是用于执行操作</p>
+<p>settings.py    是django的项目配置文件，包含了非常重要的配置，后期后在里面做一些改动</p>
+<p>urls.py   是路由表，写了应该有哪些函数处理前段发来的各种请求</p>
+<p>wsgi.py  是提供给wsgi web server调用的接口文件，里面的变量application对应对象实现了wsgi入口，供wsgi web server调用</p>
+<p>到此，我们已经完成了一个项目的创建，现在需要基本尝试运行</p>
+<p>3.服务启动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py runserver  IP地址：端口</span><br></pre></td></tr></table></figure>
+<p>基本上使用的IP地址都是本地127.0.0.1和本地端口，或者使用0.0.0.0IP地址，命令成功执行后，在浏览器中输入刚才的地址和端口查看页面</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/01/11/django/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-something" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -234,19 +329,19 @@
 
 
   
-    <article id="post-othertest" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/12/20/othertest/">othertest</a>
+      <a class="article-title" href="/2021/12/20/markdown/">markdown</a>
     </h1>
   
 
         
-        <a href="/2021/12/20/othertest/" class="archive-article-date">
+        <a href="/2021/12/20/markdown/" class="archive-article-date">
   	<time datetime="2021-12-20T09:16:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-20</time>
 </a>
         
@@ -254,11 +349,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> webspider</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <p>markdown还在学习中</p>
+<hr>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> webspider</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>上述代码应用块</p>
 </blockquote>
 <p>正文</p>
+<p>引用图片失败了</p>
+<p><img src="~/blog/public/img/touxiang.jpg" alt="头像" title="是个头像"></p>
 
       
 
@@ -272,7 +371,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		
 		</ul>
@@ -282,7 +381,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/12/20/othertest/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/12/20/markdown/">展开全文 >></a>
         </p>
       
 
@@ -312,19 +411,19 @@
 
 
   
-    <article id="post-record" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/12/19/record/">record</a>
+      <a class="article-title" href="/2021/12/19/hexo/">hexo</a>
     </h1>
   
 
         
-        <a href="/2021/12/19/record/" class="archive-article-date">
+        <a href="/2021/12/19/hexo/" class="archive-article-date">
   	<time datetime="2021-12-19T10:03:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-19</time>
 </a>
         
@@ -356,7 +455,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/12/19/record/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/12/19/hexo/">展开全文 >></a>
         </p>
       
 
@@ -631,11 +730,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">

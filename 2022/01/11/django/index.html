@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>something | blog</title>
+  <title>python web django | blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="寒假学习数据库、编译原理、Java、计算机组成原理，">
+  <meta name="description" content="python web 是临时学的，django也是现充的，当时就花了八个小时写了的，现在没记得几个关于的django的命令了 主要教程网站：http:&#x2F;&#x2F;www.byhy.net&#x2F;tut&#x2F;webdev&#x2F;django&#x2F;01&#x2F;B站也有这个教程的视屏 副教程：菜鸟  django是python web开发中流行的后端应用框架，大多是基于http协议， 1.安装django 1234pip install">
 <meta property="og:type" content="article">
-<meta property="og:title" content="something">
-<meta property="og:url" content="http://example.com/2021/12/22/something/index.html">
+<meta property="og:title" content="python web django">
+<meta property="og:url" content="http://example.com/2022/01/11/django/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="寒假学习数据库、编译原理、Java、计算机组成原理，">
+<meta property="og:description" content="python web 是临时学的，django也是现充的，当时就花了八个小时写了的，现在没记得几个关于的django的命令了 主要教程网站：http:&#x2F;&#x2F;www.byhy.net&#x2F;tut&#x2F;webdev&#x2F;django&#x2F;01&#x2F;B站也有这个教程的视屏 副教程：菜鸟  django是python web开发中流行的后端应用框架，大多是基于http协议， 1.安装django 1234pip install">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-12-22T14:04:03.000Z">
-<meta property="article:modified_time" content="2022-01-11T15:15:08.232Z">
+<meta property="article:published_time" content="2022-01-11T15:22:00.000Z">
+<meta property="article:modified_time" content="2022-01-13T13:07:25.535Z">
 <meta property="article:author" content="oxyde">
-<meta property="article:tag" content="随笔">
+<meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="blog" type="application/atom+xml">
@@ -161,27 +161,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-something" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-django" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      something
+      python web django
     </h1>
   
 
         
-        <a href="/2021/12/22/something/" class="archive-article-date">
-  	<time datetime="2021-12-22T14:04:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-22</time>
+        <a href="/2022/01/11/django/" class="archive-article-date">
+  	<time datetime="2022-01-11T15:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>寒假学习数据库、编译原理、Java、计算机组成原理，</p>
+        <p>python web 是临时学的，django也是现充的，当时就花了八个小时写了的，现在没记得几个关于的django的命令了</p>
+<p>主要教程网站：<a target="_blank" rel="noopener" href="http://www.byhy.net/tut/webdev/django/01/">http://www.byhy.net/tut/webdev/django/01/</a><br>B站也有这个教程的视屏</p>
+<p>副教程：菜鸟</p>
+<hr>
+<p>django是python web开发中流行的后端应用框架，<br>大多是基于http协议，</p>
+<p>1.安装django</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pip install django  </span><br><span class="line"></span><br><span class="line">python -m django --version //检查是否安装完成，并显示版本</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>2.创建项目</p>
+<p>进到项目文件夹创建目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">django-admin startproject 项目名称</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>会得到一个带有项目名称的文件夹,此处使用review来写</p>
+<p>review文件夹下有一个review文件夹（其中包括了_init__.py,settings.py,urls.py,wsgi.py）和manage.py文件</p>
+<p>manage.py  是一个工具脚本，用作项目管理，大部分是用于执行操作</p>
+<p>settings.py    是django的项目配置文件，包含了非常重要的配置，后期后在里面做一些改动</p>
+<p>urls.py   是路由表，写了应该有哪些函数处理前段发来的各种请求</p>
+<p>wsgi.py  是提供给wsgi web server调用的接口文件，里面的变量application对应对象实现了wsgi入口，供wsgi web server调用</p>
+<p>到此，我们已经完成了一个项目的创建，现在需要基本尝试运行</p>
+<p>3.服务启动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py runserver  IP地址：端口</span><br></pre></td></tr></table></figure>
+<p>基本上使用的IP地址都是本地127.0.0.1和本地端口，或者使用0.0.0.0IP地址，命令成功执行后，在浏览器中输入刚才的地址和端口查看页面</p>
 
       
 
@@ -216,7 +237,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		
 		</ul>
@@ -272,7 +293,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/12/22/something/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/11/django/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -286,18 +307,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/01/11/django/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          python web django
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/12/20/markdown/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">markdown</div>
+    <a href="/2021/12/22/something/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">something</div>
       <i class="icon-circle-right"></i>
     </a>
   
