@@ -8,18 +8,21 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>python web django | blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python web 是临时学的，django也是现充的，当时就花了八个小时写了的，现在没记得几个关于的django的命令了 主要教程网站：http:&#x2F;&#x2F;www.byhy.net&#x2F;tut&#x2F;webdev&#x2F;django&#x2F;01&#x2F;B站也有这个教程的视屏 副教程：菜鸟  django是python web开发中流行的后端应用框架，大多是基于http协议， 1.安装django 1234pip install">
+  <meta name="description" content="python web 是临时学的，django也是现充的，当时就花了八个小时写了的，现在没记得几个关于的django的命令了 主要教程网站：http:&#x2F;&#x2F;www.byhy.net&#x2F;tut&#x2F;webdev&#x2F;django&#x2F;01&#x2F;B站也有这个教程的视屏 副教程：菜鸟  django是python web开发中流行的后端应用框架，大多是基于http协议， 基础项目创建1.安装django1234pip in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python web django">
 <meta property="og:url" content="http://example.com/2022/01/11/django/index.html">
 <meta property="og:site_name" content="blog">
-<meta property="og:description" content="python web 是临时学的，django也是现充的，当时就花了八个小时写了的，现在没记得几个关于的django的命令了 主要教程网站：http:&#x2F;&#x2F;www.byhy.net&#x2F;tut&#x2F;webdev&#x2F;django&#x2F;01&#x2F;B站也有这个教程的视屏 副教程：菜鸟  django是python web开发中流行的后端应用框架，大多是基于http协议， 1.安装django 1234pip install">
+<meta property="og:description" content="python web 是临时学的，django也是现充的，当时就花了八个小时写了的，现在没记得几个关于的django的命令了 主要教程网站：http:&#x2F;&#x2F;www.byhy.net&#x2F;tut&#x2F;webdev&#x2F;django&#x2F;01&#x2F;B站也有这个教程的视屏 副教程：菜鸟  django是python web开发中流行的后端应用框架，大多是基于http协议， 基础项目创建1.安装django1234pip in">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/01/11/django/images/%E8%BF%90%E8%A1%8C%E6%88%90%E5%8A%9F.jpg">
+<meta property="og:image" content="http://example.com/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2022-01-14-172420.jpg">
 <meta property="article:published_time" content="2022-01-11T15:22:00.000Z">
-<meta property="article:modified_time" content="2022-01-13T13:07:25.535Z">
+<meta property="article:modified_time" content="2022-01-14T09:33:03.315Z">
 <meta property="article:author" content="oxyde">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/01/11/django/images/%E8%BF%90%E8%A1%8C%E6%88%90%E5%8A%9F.jpg">
   
     <link rel="alternative" href="/atom.xml" title="blog" type="application/atom+xml">
   
@@ -186,11 +189,9 @@
 <p>副教程：菜鸟</p>
 <hr>
 <p>django是python web开发中流行的后端应用框架，<br>大多是基于http协议，</p>
-<p>1.安装django</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pip install django  </span><br><span class="line"></span><br><span class="line">python -m django --version //检查是否安装完成，并显示版本</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="基础项目创建"><a href="#基础项目创建" class="headerlink" title="基础项目创建"></a>基础项目创建</h1><h2 id="1-安装django"><a href="#1-安装django" class="headerlink" title="1.安装django"></a>1.安装django</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pip install django  </span><br><span class="line"></span><br><span class="line">python -m django --version //检查是否安装完成，并显示版本</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>2.创建项目</p>
-<p>进到项目文件夹创建目录</p>
+<h2 id="2-创建项目"><a href="#2-创建项目" class="headerlink" title="2.创建项目"></a>2.创建项目</h2><p>进到项目文件夹创建目录</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">django-admin startproject 项目名称</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>会得到一个带有项目名称的文件夹,此处使用review来写</p>
@@ -200,9 +201,45 @@
 <p>urls.py   是路由表，写了应该有哪些函数处理前段发来的各种请求</p>
 <p>wsgi.py  是提供给wsgi web server调用的接口文件，里面的变量application对应对象实现了wsgi入口，供wsgi web server调用</p>
 <p>到此，我们已经完成了一个项目的创建，现在需要基本尝试运行</p>
-<p>3.服务启动</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py runserver  IP地址：端口</span><br></pre></td></tr></table></figure>
-<p>基本上使用的IP地址都是本地127.0.0.1和本地端口，或者使用0.0.0.0IP地址，命令成功执行后，在浏览器中输入刚才的地址和端口查看页面</p>
+<h2 id="3-服务启动"><a href="#3-服务启动" class="headerlink" title="3.服务启动"></a>3.服务启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py runserver  IP地址：端口</span><br></pre></td></tr></table></figure>
+<p>基本上使用的IP地址都是本地127.0.0.1和本地端口，或者使用0.0.0.0IP地址，命令成功执行后，在浏览器中输入刚才的地址和端口查看页面,浏览器界面是一个绿色的小火箭表示运行成功</p>
+<h1 id="创建项目app"><a href="#创建项目app" class="headerlink" title="创建项目app"></a>创建项目app</h1><h2 id="4-创建多个app"><a href="#4-创建多个app" class="headerlink" title="4.创建多个app"></a>4.创建多个app</h2><p>django项目中需要多个任务app完成，可以理解为是程序代码中的多个功能函数部分，对应到django中就是app，</p>
+<p>创建app命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python manage.py startapp app名称</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>带有manage.py的命令需要在项目根目录下执行</p>
+</blockquote>
+<p>命令执行后会多出一个带有point的文件夹（app名称），其中包括__init__.py,admin.py, apps.py  ,models.py , tests.py, views.py多个python文件以及一个migrations文件夹</p>
+<p>现在已经创建了一个app，目前为止一直在后端配置，当我们访问这个网站或者地址时，依然是django的初始界面</p>
+<h2 id="5-返回页面内容给浏览器"><a href="#5-返回页面内容给浏览器" class="headerlink" title="5.返回页面内容给浏览器"></a>5.返回页面内容给浏览器</h2><h3 id="处理单个请求"><a href="#处理单个请求" class="headerlink" title="处理单个请求"></a>处理单个请求</h3><p>在point文件下有个views.py文件，这个文件通常是写处理http请求代码的</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> django.http  <span class="keyword">import</span>  HttpResponse</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create your views here.</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">listorders</span>(<span class="params">request</span>):</span></span><br><span class="line">    <span class="keyword">return</span>  HttpResponse(<span class="string">&quot;你好，已经相应你的请求并返回结果&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>响应页面写好了，需要将这个处理方法写到路由表里面，让浏览器访问时，自动调用这个函数</p>
+<p>路由表是之前review文件夹下的urls.py</p>
+<blockquote>
+<p>此处写时需要将view.py中的listorders函数导入</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"><span class="keyword">from</span> point.views <span class="keyword">import</span> listorders</span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">&#x27;admin/&#x27;</span>, admin.site.urls),</span><br><span class="line">    path(<span class="string">&#x27;point/&#x27;</span>, listorders)</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在根目录下运行启动服务命令,在浏览器中尝试打开，我的是<a target="_blank" rel="noopener" href="http://127.0.0.1:99/point/">http://127.0.0.1:99/point/</a></p>
+<p><img src="images/%E8%BF%90%E8%A1%8C%E6%88%90%E5%8A%9F.jpg" alt="tu"><br>打开后发现，可以运行</p>
+<h3 id="处理多个请求"><a href="#处理多个请求" class="headerlink" title="处理多个请求"></a>处理多个请求</h3><p>处理多个请求就需要在app目录下添加一个urls.py文件用于app内部导航<br>添加如下代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"><span class="keyword">from</span> . <span class="keyword">import</span> views</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">&#x27;&#x27;</span>, views.listorders),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>此处的’’中可以填其他名称，访问地址需要增加引号中的内容,为空： <a target="_blank" rel="noopener" href="http://127.0.0.1:99/point/">http://127.0.0.1:99/point/</a>   为orders：<a target="_blank" rel="noopener" href="http://127.0.0.1:99/point/orders">http://127.0.0.1:99/point/orders</a><br>即可访问，path中的引号是多加一个路由层级，</p>
+</blockquote>
+<p>修改完了app下的路由，还需要修改review下的urls.py</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path,include</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">&#x27;admin/&#x27;</span>, admin.site.urls),</span><br><span class="line">    path(<span class="string">&#x27;point/&#x27;</span>, include(<span class="string">&#x27;point.urls&#x27;</span>)),</span><br><span class="line">]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="数据库使用"><a href="#数据库使用" class="headerlink" title="数据库使用"></a>数据库使用</h1><p>数据库是常规内容<br>django中是由默认数据库sqlite,这个数据库使用比较方面，对于新手来说，其他数据库有繁琐的安装配置内容，需要按照教程，比较费时间，</p>
+<p>这个我也是初次接触带有数据库的项目。不是很懂</p>
+<p>在settings.py文件中有一个数据库的配置代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Database</span></span><br><span class="line"><span class="comment"># https://docs.djangoproject.com/en/4.0/ref/settings/#databases</span></span><br><span class="line"></span><br><span class="line">DATABASES = &#123;</span><br><span class="line">    <span class="string">&#x27;default&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;ENGINE&#x27;</span>: <span class="string">&#x27;django.db.backends.sqlite3&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;NAME&#x27;</span>: BASE_DIR / <span class="string">&#x27;db.sqlite3&#x27;</span>,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py  migrate</span><br></pre></td></tr></table></figure>
+<p>会在项目根目录下生成db.sqlite3</p>
+<p><img src="/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2022-01-14-172420.jpg" alt="目录结构"></p>
 
       
 
@@ -306,6 +343,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2022/01/22/%E5%AE%89%E5%8D%93APP/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          安卓APP
+        
+      </div>
+    </a>
   
   
     <a href="/2021/12/22/something/" id="article-nav-older" class="article-nav-link-wrap">
